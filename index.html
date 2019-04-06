@@ -7,12 +7,77 @@
     <title>Crystals for Days</title>
     <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|Raleway" rel="stylesheet">
 </head>
 <body>
 
+    <!-- <div class="wrapper"></div> -->
+    <!-- class="permanent" for some of permanent items on the page? -->
 
+    <div class="header"><h1>Crystals!!!</h1></div>
+    
+    <div class="instructions">
 
-    <script src="assets/javascript/game.js"></script>
+        <h2 class="instructions-title">Instructions</h2>
+
+        <ul>
+
+            <li>At the start of each game, you'll see a random number. This is your goal number.</li>
+
+            <li>Click the four crystals below one-by-one to get to your goal number. Each crystal represents a different number of points, which will be added to your score when you click it, and no, you will not be shown the value of the crystal - you'll have to do math to guess ;)</li>
+
+            <li>If you meet the goal number exactly, you win!!! If you exceed the random number, you lose - sucks to your assmar.</li>
+
+            <li>After you win or lose, go ahead, play again; you'll get a new goal number and each crystal will be worth a new value of points.</li>
+    
+        </ul>
+
+    </div>
+
+    <div class="northstars">
+        <h2>Random Number:
+
+        <span id="random-num">0</span>
+
+        </h2>
+    
+        <h2>Your Current Score is:
+    
+        <span id="current-score-num">0</span>
+
+        </h2>
+    
+    </div>    
+
+    <div class="crystals">
+        
+        <!-- <a href="https://unsplash.com/@denilosergio?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Denilo  Vieira"> -->
+        <img src="assets/images/denilo-vieira-1470778-unsplash.jpg" id="rock-one" class="crystal">  
+        <!-- </a> -->
+
+        <!-- <a href="https://unsplash.com/@ilzelucero?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Ilze Lucero"> -->
+        <img src="assets/images/ilze-lucero-1321008-unsplash.jpg" id="rock-two" class="crystal">
+        <!-- </a> -->
+
+        <!-- <a href="https://unsplash.com/@cdfman?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Jason D"> -->
+            <!-- alt="" -->
+        <img src="assets/images/jason-d-1395052-unsplash.jpg" id="rock-three" class="crystal">
+        <!-- </a> -->
+
+        <!-- <a href="https://unsplash.com/@kalineri?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Kali Neri"> -->
+        <img src="assets/images/kali-neri-1364714-unsplash.jpg" id="rock-four" class="crystal">
+        <!-- </a> -->
+        
+    </div>
+    
+    <div class="player-record">
+            <p id="outcome-message"></p>
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+    </div>
+    
+    <!-- correct cdn link? also in the correct spot?  yes bc now JS file knows what I'm talking about when I use jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>

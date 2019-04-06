@@ -1,4 +1,103 @@
 body {
     text-align: center;
     margin: 0 auto;
+    font-size: 18px;
+    background-image: url("../images/jason-leung-479251-unsplash.jpg");
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.header {
+    font-family: 'Dokdo', cursive; 
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 2px 2px #dd1196;
+}
+
+.instructions {
+    background-color: rgb(255, 94, 7);
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 20px;
+}
+
+.instructions-title {
+    text-decoration: #dd1196 underline wavy;
+    padding: 12px; 
+}
+
+li::before {
+    content: "*"; 
+    color: #dd1196; 
+    size: 5em; 
+    display: 
+    inline-block; width: 1em;
+    margin-left: -1em;
+    font-weight: 800;
+}
+
+.northstars {
+    margin: 20px;
+    background: rgb(221, 17, 150, 0.5);
+    width: 40%;
+    margin: 0 auto;
+}
+
+#random-num {
+    color: #f9db16;
+    /* display: inline; */
+    font-size: 40px;
+    margin: 20px;  
+}
+
+#current-score-num {
+    color: rgb(255, 94, 7);
+    font-size: 40px;
+    margin: 20px;
+}
+
+.crystal {
+    width: 22%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.player-record {
+    margin: 20px;
+    background: #fff;
+    border: solid #dd1196 3px;
+    width: 40%;
+    margin: 0 auto 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.player-record p {
+    margin: 20px;
+}
+
+#wins {
+    color: rgb(255, 94, 7);
+    font-size: 45px;
+}
+
+#losses {
+    color: #11bbdd;
+    font-size: 45px;
+}
+
+#outcome-message {
+    color: #36dd11;
 }
